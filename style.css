@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: cornflowerblue;
+    background-color: darkgrey;
 }
 
 header {
@@ -17,6 +17,15 @@ main {
     align-items: center;
 }
 
+.img1 {
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
 .titulo {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -24,6 +33,7 @@ main {
     font-weight: 100;
     text-align: center;
     width: 100%;
+    text-decoration: none;
 }
 
 .subtitulo {
@@ -60,7 +70,7 @@ main {
 
 footer {
     height: 100px;
-    background-color: cornflowerblue;
+    background-color: darkgrey;
     display: flex;
     align-items: center;
     flex-direction: column;
