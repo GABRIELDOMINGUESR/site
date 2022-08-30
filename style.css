@@ -1,66 +1,64 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: cornflowerblue;
 }
 
-header{
+header {
     padding: 8px;
     height: 100px;
     background-color: black;
     text-align: center;
 }
 
-main{
+main {
     display: initial;
     align-items: center;
-
 }
 
-.foto{
-    width: 100vw;
-}
-.titulo{  
+.titulo {
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 60px ;
+    font-size: 60px;
     font-weight: 100;
     text-align: center;
     width: 100%;
-
 }
-.subtitulo{
+
+.subtitulo {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 1200px;
 }
 
-.intro{
+.intro {
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
-.titulos{
+.titulos {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.title{
+
+.title {
     text-align: center;
 }
 
-.tripulação{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
-}
-.Filmes{
+.tripulação {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 30px;
 }
 
-footer{
+.Filmes {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+footer {
     height: 100px;
     background-color: cornflowerblue;
     display: flex;
@@ -70,32 +68,69 @@ footer{
     margin-top: 30px;
 }
 
+@media (max-width:960px) {
+     :root {
+        --space-default: 20px
+    }
+    main {
+        grid-template-columns: repeat(1fr);
+    }
+    .description {
+        grid-row: 2;
+        grid-column: 1/-1;
+        place-self: center;
+        text-align: center;
+    }
+    .action {
+        grid-row: 2;
+        grid-column: 1/-1;
+        place-self: end center;
+    }
+    footer {
+        display: none;
+    }
+    @media (max-width:640px) {
+        .title {
+            transform: translateY(10%);
+        }
+        .description__title {
+            font-size: 10vw;
+        }
+        .description__text {
+            display: none;
+        }
+        .action {
+            width: 100%;
+        }
+    }
+}
+
 li {
     text-align: center;
 }
 
-h3{
+h3 {
     text-align: center;
     font-size: 30px;
     margin-top: 30px;
 }
 
-h1{
+h1 {
     text-align: center;
 }
-h2{
+
+h2 {
     width: 100%;
     align-items: center;
 }
 
-h4{
+h4 {
     text-align: center;
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 
-h5{
+h5 {
     text-align: center;
 }
